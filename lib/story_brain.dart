@@ -31,13 +31,13 @@ class StoryBrain{
   ];
 
   String getStory(){
-    return _storyData.first.storyTitle ;
+    return _storyData[storyNumber].storyTitle ;
   }
   String getChoice1(){
-    return _storyData.first.choice1 ;
+    return _storyData[storyNumber].choice1 ;
   }
   String getChoice2(){
-    return _storyData.first.choice2 ;
+    return _storyData[storyNumber].choice2 ;
   }
   void nextStory(int choiceNumber){
     switch(storyNumber){
